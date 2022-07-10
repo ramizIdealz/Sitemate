@@ -11,6 +11,10 @@
 		4AAD0FFE8A002DFB61AF7383 /* Pods_Sitemate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577CF10C97080D4C88CA8F5A /* Pods_Sitemate.framework */; };
 		B49E6EC9287AE7B4003E45BA /* En.strings in Resources */ = {isa = PBXBuildFile; fileRef = B49E6EC8287AE7B4003E45BA /* En.strings */; };
 		B49E6ECF287AE826003E45BA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E6ECE287AE826003E45BA /* Common.swift */; };
+		B49E6EEA287AEE1F003E45BA /* Contracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E6EE9287AEE1F003E45BA /* Contracts.swift */; };
+		B49E6EED287AEE6E003E45BA /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E6EEC287AEE6E003E45BA /* NetworkLayer.swift */; };
+		B49E6EF0287AEEA1003E45BA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E6EEF287AEEA1003E45BA /* Constants.swift */; };
+		B49E6EF3287AEEF2003E45BA /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E6EF2287AEEF2003E45BA /* DataStorage.swift */; };
 		B4F76D0E287AE5FA006BE55D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F76D0D287AE5FA006BE55D /* AppDelegate.swift */; };
 		B4F76D12287AE5FA006BE55D /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F76D11287AE5FA006BE55D /* MainController.swift */; };
 		B4F76D15287AE5FA006BE55D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F76D13287AE5FA006BE55D /* Main.storyboard */; };
@@ -47,6 +51,10 @@
 		8C3A8304EE99482B0C75C25F /* Pods_Sitemate_SitemateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sitemate_SitemateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49E6EC8287AE7B4003E45BA /* En.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = En.strings; sourceTree = "<group>"; };
 		B49E6ECE287AE826003E45BA /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		B49E6EE9287AEE1F003E45BA /* Contracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contracts.swift; sourceTree = "<group>"; };
+		B49E6EEC287AEE6E003E45BA /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		B49E6EEF287AEEA1003E45BA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B49E6EF2287AEEF2003E45BA /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		B4F76D0A287AE5FA006BE55D /* Sitemate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sitemate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F76D0D287AE5FA006BE55D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4F76D11287AE5FA006BE55D /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -148,6 +156,38 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		B49E6EE8287AEE12003E45BA /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				B49E6EE9287AEE1F003E45BA /* Contracts.swift */,
+			);
+			path = Contracts;
+			sourceTree = SOURCE_ROOT;
+		};
+		B49E6EEB287AEE55003E45BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B49E6EEC287AEE6E003E45BA /* NetworkLayer.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B49E6EEE287AEE9A003E45BA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B49E6EEF287AEEA1003E45BA /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B49E6EF1287AEEE8003E45BA /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				B49E6EF2287AEEF2003E45BA /* DataStorage.swift */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
 		B4F76D01287AE5FA006BE55D = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +213,10 @@
 		B4F76D0C287AE5FA006BE55D /* Sitemate */ = {
 			isa = PBXGroup;
 			children = (
+				B49E6EF1287AEEE8003E45BA /* DataStorage */,
+				B49E6EEE287AEE9A003E45BA /* Constants */,
+				B49E6EEB287AEE55003E45BA /* Network */,
+				B49E6EE8287AEE12003E45BA /* Contracts */,
 				B49E6ECD287AE820003E45BA /* Common */,
 				B49E6EC7287AE7AA003E45BA /* Localizations */,
 				B49E6EC6287AE77D003E45BA /* Storyboard */,
@@ -463,7 +507,11 @@
 			files = (
 				B4F76D12287AE5FA006BE55D /* MainController.swift in Sources */,
 				B4F76D0E287AE5FA006BE55D /* AppDelegate.swift in Sources */,
+				B49E6EED287AEE6E003E45BA /* NetworkLayer.swift in Sources */,
+				B49E6EF3287AEEF2003E45BA /* DataStorage.swift in Sources */,
 				B4F76D3F287AE62E006BE55D /* SitemateRouter.swift in Sources */,
+				B49E6EF0287AEEA1003E45BA /* Constants.swift in Sources */,
+				B49E6EEA287AEE1F003E45BA /* Contracts.swift in Sources */,
 				B49E6ECF287AE826003E45BA /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
