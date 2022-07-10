@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import ProgressHUD
 
 class MainController: UIViewController {
     
@@ -22,8 +23,17 @@ class MainController: UIViewController {
     }
     func fetchLyricsData()
     {
+        setupHud()
         Api_Wrapper.getSitemapSongLyricsData(artist: txtArtist.text!, title: txtTitle.text!)
+    }
+    func setupHud()
+    {
+        ProgressHUD.show("Fetching Lyrics...")
         self.view.endEditing(true)
+    }
+    func discardHud()
+    {
+        ProgressHUD.dismiss()
     }
     func clearStorage()
     {
@@ -62,11 +72,13 @@ extension MainController:DataStorageDelegate
         
         let lyricsObj = DataFetch.getSavedLyrics()
         txtLyrics.text = lyricsObj.lyrics
+        discardHud()
     }
     
     func dataStorageError(error: String) {
         
         Common.sendAlert(title: "Error", msg: error, viewController: self)
+        discardHud()
     }
 
 }
@@ -77,6 +89,7 @@ extension MainController:NetworkLayerContract
     func apiFailed(error: String) {
         
         Common.sendAlert(title: "Error", msg: error, viewController: self)
+        discardHud()
     }
 }
 

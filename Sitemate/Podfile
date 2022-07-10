@@ -8,6 +8,7 @@ target 'Sitemate' do
     pod 'Alamofire', '~> 4.4'
     pod 'RealmSwift', '~> 3.18.0'
     pod "ObjectMapper+Realm"
+    pod 'ProgressHUD'
 
   target 'SitemateTests' do
     inherit! :search_paths
