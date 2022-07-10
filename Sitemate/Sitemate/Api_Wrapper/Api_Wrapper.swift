@@ -10,8 +10,8 @@ import Alamofire
 
 class Api_Wrapper: NSObject {
         
-    class func getSitemapSongLyricsData(param:Parameters)
+    class func getSitemapSongLyricsData(artist:String,title:String)
     {
-        NetworkLayer.getLyrics(api_path: Endpoints.V1,parameters: param)
+        NetworkLayer.getLyrics(api_path: Endpoints.V1,artist: artist,title: title)
     }
 }

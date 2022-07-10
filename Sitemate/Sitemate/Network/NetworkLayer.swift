@@ -12,20 +12,22 @@ class NetworkLayer: NSObject {
     
     static var delegate:NetworkLayerContract? = nil
         
-    class func getLyrics(api_path:String,parameters:Parameters)
+    class func getLyrics(api_path:String,artist:String,title:String)
     {
-        let apiUrl = Api_Base_Url + api_path
+        let apiUrl = Api_Base_Url + api_path + String(format: "%@/%@", artist,title)
+        guard let validateUrl = apiUrl.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed) else
+        { return }
         
-        Alamofire.request(apiUrl, method: .get, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
+        Alamofire.request(validateUrl, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
             
             switch(response.result) {
             case .success(_):
                 if let resultRes = response.result.value {
                     
-                    DataStorage.storeLyricsData(arr: resultRes as! NSArray)
+                    DataStorage.storeLyricsData(response: resultRes as! Dictionary<String, Any>)
                 }
                 break
-            case .failure(let _):
+            case .failure(let error):
                 if let data = response.data {
                  
                     delegate?.apiFailed(error: parseApiFailure(data: data))

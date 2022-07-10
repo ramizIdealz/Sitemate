@@ -43,24 +43,17 @@ class SitemateTests: XCTestCase {
 
     func testMapperToEntitySuccess()
     {
-        let jsonDictionary: [String: Any] = ["id": 10, "email":"ramiz@test.com","gender":"Male","status":"Married","name":"Ramiz"]
-        let userMapped =  Users(JSON: jsonDictionary)
+        let jsonDictionary: [String: Any] = ["lyrics": "Turn your magic on, Umi she'd say"]
+        let lyricsMapped =  Lyrics(JSON: jsonDictionary)
         
-        XCTAssertEqual(userMapped?.name, "Ramiz")
-        XCTAssertEqual(userMapped?.id, 10)
-        XCTAssertEqual(userMapped?.email, "ramiz@test.com")
-        XCTAssertEqual(userMapped?.status, "Married")
-
+        XCTAssertEqual(lyricsMapped?.lyrics, "Turn your magic on, Umi she'd say")
     }
     func testMapperToEntityFail()
     {
-        let jsonDictionary: [String: Any] = ["id": 10, "email":"ramiz@test.com","gender":"Male","status":"Married","name":"Ramiz"]
-        let userMapped =  Users(JSON: jsonDictionary)
+        let jsonDictionary: [String: Any] = ["lyrics": "Turn your magic on, Umi she'd say"]
+        let lyricsMapped =  Lyrics(JSON: jsonDictionary)
         
-        XCTAssertNotEqual(userMapped?.name, "Ramiz11")
-        XCTAssertNotEqual(userMapped?.id, 110)
-        XCTAssertNotEqual(userMapped?.email, "ramiz2@test.com")
-        XCTAssertNotEqual(userMapped?.status, "Single")
+        XCTAssertNotEqual(lyricsMapped?.lyrics, "Ramiz11")
     }
 
 }

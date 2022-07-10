@@ -9,5 +9,5 @@ import UIKit
 
 struct Endpoints {
     
-    static let V1 = "v1"
+    static let V1 = "v1/"
 }
