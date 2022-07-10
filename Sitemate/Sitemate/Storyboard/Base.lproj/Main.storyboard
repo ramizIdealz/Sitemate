@@ -15,16 +15,92 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Artist Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bab-NQ-W9e">
+                                <rect key="frame" x="25" y="104" width="364" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3eT-Ue-asD"/>
+                                    <constraint firstAttribute="width" constant="364" id="VCn-dh-ux2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fetch Lyrics Module" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y19-1I-n4u">
+                                <rect key="frame" x="25" y="54" width="364" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Nmh-UE-2fG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snu-Yz-dRD">
+                                <rect key="frame" x="273" y="218" width="121" height="43"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.34509803919999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Lfd-xj-aT5"/>
+                                    <constraint firstAttribute="width" constant="121" id="ey2-MN-hMO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Fetch">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="validateParamToCallApi" destination="BYZ-38-t0r" eventType="touchUpInside" id="esD-zQ-VH6"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eod-Ae-gCI">
+                                <rect key="frame" x="25" y="302" width="364" height="500"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5oj-8M-2bo">
+                                <rect key="frame" x="25" y="154" width="364" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="364" id="17I-Vw-34V"/>
+                                    <constraint firstAttribute="height" constant="34" id="fZs-oQ-MX7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="snu-Yz-dRD" firstAttribute="top" secondItem="5oj-8M-2bo" secondAttribute="bottom" constant="30" id="05I-vu-OcQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eod-Ae-gCI" secondAttribute="bottom" constant="60" id="Aip-mp-K54"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eod-Ae-gCI" secondAttribute="trailing" constant="25" id="CUd-nm-jSA"/>
+                            <constraint firstItem="bab-NQ-W9e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="HVQ-DM-VAK"/>
+                            <constraint firstItem="bab-NQ-W9e" firstAttribute="top" secondItem="y19-1I-n4u" secondAttribute="bottom" constant="20" id="I6f-JM-9z7"/>
+                            <constraint firstItem="eod-Ae-gCI" firstAttribute="top" secondItem="snu-Yz-dRD" secondAttribute="bottom" constant="41" id="Rmc-ct-kTL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5oj-8M-2bo" secondAttribute="trailing" constant="25" id="U1j-cI-7lh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y19-1I-n4u" secondAttribute="trailing" constant="25" id="ZVW-48-hie"/>
+                            <constraint firstItem="y19-1I-n4u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="gz0-II-Z0b"/>
+                            <constraint firstItem="y19-1I-n4u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="ioi-TM-Dxv"/>
+                            <constraint firstItem="eod-Ae-gCI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ks1-SJ-mS9"/>
+                            <constraint firstItem="5oj-8M-2bo" firstAttribute="top" secondItem="bab-NQ-W9e" secondAttribute="bottom" constant="16" id="mU4-rC-L5O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bab-NQ-W9e" secondAttribute="trailing" constant="25" id="qAU-4q-hms"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="snu-Yz-dRD" secondAttribute="trailing" constant="20" id="qEO-tG-QG4"/>
+                            <constraint firstItem="5oj-8M-2bo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="rjO-pD-jIc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtArtist" destination="bab-NQ-W9e" id="JYg-OT-UbW"/>
+                        <outlet property="txtLyrics" destination="eod-Ae-gCI" id="dqP-tf-BSe"/>
+                        <outlet property="txtTitle" destination="5oj-8M-2bo" id="yez-FD-ape"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="112"/>
+            <point key="canvasLocation" x="137.68115942028987" y="111.83035714285714"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

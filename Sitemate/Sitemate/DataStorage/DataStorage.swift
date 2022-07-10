@@ -28,4 +28,14 @@ class DataStorage: NSObject {
         delegate?.dataProcessedSuccesfully()
     }
     
+    // Normally we don't use this, we update the saved data with their id, but this is a show and kill feature
+    class func removeStoredLyrics()
+    {
+        let realmObj = try! Realm()
+        let userSaved:Results<Lyrics> = realmObj.objects(Lyrics.self)
+        try! realmObj.write {
+            realmObj.delete(userSaved)
+        }
+    }
+
 }

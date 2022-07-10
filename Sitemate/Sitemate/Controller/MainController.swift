@@ -9,19 +9,49 @@ import UIKit
 import Alamofire
 
 class MainController: UIViewController {
-        
+    
+    @IBOutlet weak var txtArtist:UITextField!
+    @IBOutlet weak var txtTitle:UITextField!
+    @IBOutlet weak var txtLyrics:UITextView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Api Testing
-        fetchLyricsData()
-        
+                
         DataStorage.delegate = self
         NetworkLayer.delegate = self
     }
     func fetchLyricsData()
     {
-        Api_Wrapper.getSitemapSongLyricsData(artist: "Coldplay", title: "Adventure of a Lifetime")
+        Api_Wrapper.getSitemapSongLyricsData(artist: txtArtist.text!, title: txtTitle.text!)
+        self.view.endEditing(true)
+    }
+    func clearStorage()
+    {
+        DataStorage.removeStoredLyrics()
+        txtLyrics.text = ""
+    }
+    @IBAction func validateParamToCallApi()
+    {
+        if checkParamValidation()
+        {
+            fetchLyricsData()
+        }
+    }
+    
+    func checkParamValidation() -> Bool
+    {
+        if txtArtist.text?.count == 0
+        {
+            Common.sendAlert(title: "Error", msg: "Enter artist name please", viewController: self)
+            return false
+        }
+        else if txtTitle.text?.count == 0
+        {
+            Common.sendAlert(title: "Error", msg: "Enter song title please", viewController: self)
+            return false
+        }
+        
+        return true
     }
 }
 
@@ -31,7 +61,7 @@ extension MainController:DataStorageDelegate
     func dataProcessedSuccesfully() {
         
         let lyricsObj = DataFetch.getSavedLyrics()
-        print("")
+        txtLyrics.text = lyricsObj.lyrics
     }
     
     func dataStorageError(error: String) {
