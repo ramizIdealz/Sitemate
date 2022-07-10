@@ -15,6 +15,8 @@
 		B49E6EED287AEE6E003E45BA /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E6EEC287AEE6E003E45BA /* NetworkLayer.swift */; };
 		B49E6EF0287AEEA1003E45BA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E6EEF287AEEA1003E45BA /* Constants.swift */; };
 		B49E6EF3287AEEF2003E45BA /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E6EF2287AEEF2003E45BA /* DataStorage.swift */; };
+		B49E6EF6287AEFFB003E45BA /* Api_Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E6EF5287AEFFB003E45BA /* Api_Wrapper.swift */; };
+		B49E6EF9287AF08F003E45BA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E6EF8287AF08F003E45BA /* Endpoints.swift */; };
 		B4F76D0E287AE5FA006BE55D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F76D0D287AE5FA006BE55D /* AppDelegate.swift */; };
 		B4F76D12287AE5FA006BE55D /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F76D11287AE5FA006BE55D /* MainController.swift */; };
 		B4F76D15287AE5FA006BE55D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F76D13287AE5FA006BE55D /* Main.storyboard */; };
@@ -55,6 +57,8 @@
 		B49E6EEC287AEE6E003E45BA /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		B49E6EEF287AEEA1003E45BA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B49E6EF2287AEEF2003E45BA /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		B49E6EF5287AEFFB003E45BA /* Api_Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api_Wrapper.swift; sourceTree = "<group>"; };
+		B49E6EF8287AF08F003E45BA /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		B4F76D0A287AE5FA006BE55D /* Sitemate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sitemate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F76D0D287AE5FA006BE55D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4F76D11287AE5FA006BE55D /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -188,6 +192,22 @@
 			path = DataStorage;
 			sourceTree = "<group>";
 		};
+		B49E6EF4287AEFF3003E45BA /* Api_Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				B49E6EF5287AEFFB003E45BA /* Api_Wrapper.swift */,
+			);
+			path = Api_Wrapper;
+			sourceTree = "<group>";
+		};
+		B49E6EF7287AF065003E45BA /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				B49E6EF8287AF08F003E45BA /* Endpoints.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
 		B4F76D01287AE5FA006BE55D = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +233,8 @@
 		B4F76D0C287AE5FA006BE55D /* Sitemate */ = {
 			isa = PBXGroup;
 			children = (
+				B49E6EF7287AF065003E45BA /* Endpoint */,
+				B49E6EF4287AEFF3003E45BA /* Api_Wrapper */,
 				B49E6EF1287AEEE8003E45BA /* DataStorage */,
 				B49E6EEE287AEE9A003E45BA /* Constants */,
 				B49E6EEB287AEE55003E45BA /* Network */,
@@ -509,8 +531,10 @@
 				B4F76D0E287AE5FA006BE55D /* AppDelegate.swift in Sources */,
 				B49E6EED287AEE6E003E45BA /* NetworkLayer.swift in Sources */,
 				B49E6EF3287AEEF2003E45BA /* DataStorage.swift in Sources */,
+				B49E6EF9287AF08F003E45BA /* Endpoints.swift in Sources */,
 				B4F76D3F287AE62E006BE55D /* SitemateRouter.swift in Sources */,
 				B49E6EF0287AEEA1003E45BA /* Constants.swift in Sources */,
+				B49E6EF6287AEFFB003E45BA /* Api_Wrapper.swift in Sources */,
 				B49E6EEA287AEE1F003E45BA /* Contracts.swift in Sources */,
 				B49E6ECF287AE826003E45BA /* Common.swift in Sources */,
 			);

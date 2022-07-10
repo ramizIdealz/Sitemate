@@ -9,9 +9,9 @@ import UIKit
 
 class DataStorage: NSObject {
     
-    static var delegate:DataStorageDelegagte? = nil
+    static var delegate:DataStorageDelegate? = nil
 
-    class func storeSitemapData(arr:NSArray)
+    class func storeLyricsData(arr:NSArray)
     {
         
         delegate?.dataProcessedSuccesfully()

@@ -1,5 +1,5 @@
 //
-//  Constants.swift
+//  Endpoints.swift
 //  Sitemate
 //
 //  Created by Ramiz Rafiq on 10/07/2022.
@@ -7,4 +7,7 @@
 
 import UIKit
 
-let Api_Base_Url = "https://api.lyrics.ovh/"
+struct Endpoints {
+    
+    static let V1 = "v1"
+}

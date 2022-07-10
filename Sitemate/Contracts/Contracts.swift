@@ -8,7 +8,7 @@
 import UIKit
 
 // MARK: Data Storage Contract
-protocol DataStorageDelegagte {
+protocol DataStorageDelegate {
     
     func dataProcessedSuccesfully()
     func dataStorageError(error:String)

@@ -12,17 +12,17 @@ class NetworkLayer: NSObject {
     
     static var delegate:NetworkLayerContract? = nil
         
-    class func getBaseSiteMateData(api_path:String,method:HTTPMethod)
+    class func getLyrics(api_path:String,parameters:Parameters)
     {
         let apiUrl = Api_Base_Url + api_path
         
-        Alamofire.request(apiUrl, method: method, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
+        Alamofire.request(apiUrl, method: .get, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
             
             switch(response.result) {
             case .success(_):
                 if let resultRes = response.result.value {
                     
-                    DataStorage.storeSitemapData(arr: resultRes as! NSArray)
+                    DataStorage.storeLyricsData(arr: resultRes as! NSArray)
                 }
                 break
             case .failure(let _):
