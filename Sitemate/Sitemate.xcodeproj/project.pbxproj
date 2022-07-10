@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4399DCAB1C6803FBF4495222 /* Pods_SitemateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7670086DA3DE92ACA656796 /* Pods_SitemateTests.framework */; };
+		4AAD0FFE8A002DFB61AF7383 /* Pods_Sitemate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577CF10C97080D4C88CA8F5A /* Pods_Sitemate.framework */; };
+		B49E6EC9287AE7B4003E45BA /* En.strings in Resources */ = {isa = PBXBuildFile; fileRef = B49E6EC8287AE7B4003E45BA /* En.strings */; };
+		B49E6ECF287AE826003E45BA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49E6ECE287AE826003E45BA /* Common.swift */; };
+		B4F76D0E287AE5FA006BE55D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F76D0D287AE5FA006BE55D /* AppDelegate.swift */; };
+		B4F76D12287AE5FA006BE55D /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F76D11287AE5FA006BE55D /* MainController.swift */; };
+		B4F76D15287AE5FA006BE55D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F76D13287AE5FA006BE55D /* Main.storyboard */; };
+		B4F76D17287AE5FB006BE55D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F76D16287AE5FB006BE55D /* Assets.xcassets */; };
+		B4F76D1A287AE5FB006BE55D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F76D18287AE5FB006BE55D /* LaunchScreen.storyboard */; };
+		B4F76D25287AE5FB006BE55D /* SitemateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F76D24287AE5FB006BE55D /* SitemateTests.swift */; };
+		B4F76D30287AE5FB006BE55D /* SitemateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F76D2F287AE5FB006BE55D /* SitemateUITests.swift */; };
+		B4F76D3F287AE62E006BE55D /* SitemateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F76D3E287AE62E006BE55D /* SitemateRouter.swift */; };
+		CCD62CA5BCC139066F2539A2 /* Pods_Sitemate_SitemateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3A8304EE99482B0C75C25F /* Pods_Sitemate_SitemateUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4F76D21287AE5FB006BE55D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4F76D02287AE5FA006BE55D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4F76D09287AE5FA006BE55D;
+			remoteInfo = Sitemate;
+		};
+		B4F76D2C287AE5FB006BE55D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4F76D02287AE5FA006BE55D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4F76D09287AE5FA006BE55D;
+			remoteInfo = Sitemate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12EC7FF0AED884B30C58972B /* Pods-Sitemate-SitemateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sitemate-SitemateUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sitemate-SitemateUITests/Pods-Sitemate-SitemateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		32BFE428D08F3C7517C86544 /* Pods-SitemateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitemateTests.debug.xcconfig"; path = "Target Support Files/Pods-SitemateTests/Pods-SitemateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		577CF10C97080D4C88CA8F5A /* Pods_Sitemate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sitemate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CDAA0BA6FF8A90C09E6F8EA /* Pods-SitemateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SitemateTests.release.xcconfig"; path = "Target Support Files/Pods-SitemateTests/Pods-SitemateTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C3A8304EE99482B0C75C25F /* Pods_Sitemate_SitemateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sitemate_SitemateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49E6EC8287AE7B4003E45BA /* En.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = En.strings; sourceTree = "<group>"; };
+		B49E6ECE287AE826003E45BA /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		B4F76D0A287AE5FA006BE55D /* Sitemate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sitemate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F76D0D287AE5FA006BE55D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4F76D11287AE5FA006BE55D /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		B4F76D14287AE5FA006BE55D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4F76D16287AE5FB006BE55D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4F76D19287AE5FB006BE55D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B4F76D1B287AE5FB006BE55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4F76D20287AE5FB006BE55D /* SitemateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SitemateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F76D24287AE5FB006BE55D /* SitemateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitemateTests.swift; sourceTree = "<group>"; };
+		B4F76D26287AE5FB006BE55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4F76D2B287AE5FB006BE55D /* SitemateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SitemateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F76D2F287AE5FB006BE55D /* SitemateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitemateUITests.swift; sourceTree = "<group>"; };
+		B4F76D31287AE5FB006BE55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4F76D3E287AE62E006BE55D /* SitemateRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SitemateRouter.swift; sourceTree = "<group>"; };
+		B8884061060E30D59BD5B971 /* Pods-Sitemate-SitemateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sitemate-SitemateUITests.release.xcconfig"; path = "Target Support Files/Pods-Sitemate-SitemateUITests/Pods-Sitemate-SitemateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D21163459D62BE46EBD86E99 /* Pods-Sitemate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sitemate.release.xcconfig"; path = "Target Support Files/Pods-Sitemate/Pods-Sitemate.release.xcconfig"; sourceTree = "<group>"; };
+		E407C2985A72BDFA3A4414C2 /* Pods-Sitemate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sitemate.debug.xcconfig"; path = "Target Support Files/Pods-Sitemate/Pods-Sitemate.debug.xcconfig"; sourceTree = "<group>"; };
+		E7670086DA3DE92ACA656796 /* Pods_SitemateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SitemateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4F76D07287AE5FA006BE55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AAD0FFE8A002DFB61AF7383 /* Pods_Sitemate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F76D1D287AE5FB006BE55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4399DCAB1C6803FBF4495222 /* Pods_SitemateTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F76D28287AE5FB006BE55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD62CA5BCC139066F2539A2 /* Pods_Sitemate_SitemateUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81DC946EBD38F5048FD845BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E407C2985A72BDFA3A4414C2 /* Pods-Sitemate.debug.xcconfig */,
+				D21163459D62BE46EBD86E99 /* Pods-Sitemate.release.xcconfig */,
+				12EC7FF0AED884B30C58972B /* Pods-Sitemate-SitemateUITests.debug.xcconfig */,
+				B8884061060E30D59BD5B971 /* Pods-Sitemate-SitemateUITests.release.xcconfig */,
+				32BFE428D08F3C7517C86544 /* Pods-SitemateTests.debug.xcconfig */,
+				7CDAA0BA6FF8A90C09E6F8EA /* Pods-SitemateTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B49E6EC4287AE740003E45BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4F76D11287AE5FA006BE55D /* MainController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B49E6EC5287AE767003E45BA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B4F76D0D287AE5FA006BE55D /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B49E6EC6287AE77D003E45BA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B4F76D13287AE5FA006BE55D /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B49E6EC7287AE7AA003E45BA /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				B49E6EC8287AE7B4003E45BA /* En.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		B49E6ECD287AE820003E45BA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B49E6ECE287AE826003E45BA /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B4F76D01287AE5FA006BE55D = {
+			isa = PBXGroup;
+			children = (
+				B4F76D0C287AE5FA006BE55D /* Sitemate */,
+				B4F76D23287AE5FB006BE55D /* SitemateTests */,
+				B4F76D2E287AE5FB006BE55D /* SitemateUITests */,
+				B4F76D0B287AE5FA006BE55D /* Products */,
+				81DC946EBD38F5048FD845BA /* Pods */,
+				B86B88B248C745F17E601B99 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B4F76D0B287AE5FA006BE55D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4F76D0A287AE5FA006BE55D /* Sitemate.app */,
+				B4F76D20287AE5FB006BE55D /* SitemateTests.xctest */,
+				B4F76D2B287AE5FB006BE55D /* SitemateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4F76D0C287AE5FA006BE55D /* Sitemate */ = {
+			isa = PBXGroup;
+			children = (
+				B49E6ECD287AE820003E45BA /* Common */,
+				B49E6EC7287AE7AA003E45BA /* Localizations */,
+				B49E6EC6287AE77D003E45BA /* Storyboard */,
+				B49E6EC5287AE767003E45BA /* App */,
+				B49E6EC4287AE740003E45BA /* Controller */,
+				B4F76D3D287AE62E006BE55D /* Router */,
+				B4F76D16287AE5FB006BE55D /* Assets.xcassets */,
+				B4F76D18287AE5FB006BE55D /* LaunchScreen.storyboard */,
+				B4F76D1B287AE5FB006BE55D /* Info.plist */,
+			);
+			path = Sitemate;
+			sourceTree = "<group>";
+		};
+		B4F76D23287AE5FB006BE55D /* SitemateTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4F76D24287AE5FB006BE55D /* SitemateTests.swift */,
+				B4F76D26287AE5FB006BE55D /* Info.plist */,
+			);
+			path = SitemateTests;
+			sourceTree = "<group>";
+		};
+		B4F76D2E287AE5FB006BE55D /* SitemateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B4F76D2F287AE5FB006BE55D /* SitemateUITests.swift */,
+				B4F76D31287AE5FB006BE55D /* Info.plist */,
+			);
+			path = SitemateUITests;
+			sourceTree = "<group>";
+		};
+		B4F76D3D287AE62E006BE55D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B4F76D3E287AE62E006BE55D /* SitemateRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B86B88B248C745F17E601B99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				577CF10C97080D4C88CA8F5A /* Pods_Sitemate.framework */,
+				8C3A8304EE99482B0C75C25F /* Pods_Sitemate_SitemateUITests.framework */,
+				E7670086DA3DE92ACA656796 /* Pods_SitemateTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4F76D09287AE5FA006BE55D /* Sitemate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4F76D34287AE5FB006BE55D /* Build configuration list for PBXNativeTarget "Sitemate" */;
+			buildPhases = (
+				E9E06E4010A25EE5FCCEE95A /* [CP] Check Pods Manifest.lock */,
+				B4F76D06287AE5FA006BE55D /* Sources */,
+				B4F76D07287AE5FA006BE55D /* Frameworks */,
+				B4F76D08287AE5FA006BE55D /* Resources */,
+				1971906018BBFFE1A6231815 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sitemate;
+			productName = Sitemate;
+			productReference = B4F76D0A287AE5FA006BE55D /* Sitemate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4F76D1F287AE5FB006BE55D /* SitemateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4F76D37287AE5FB006BE55D /* Build configuration list for PBXNativeTarget "SitemateTests" */;
+			buildPhases = (
+				025DC52FD1E1FD99549B9268 /* [CP] Check Pods Manifest.lock */,
+				B4F76D1C287AE5FB006BE55D /* Sources */,
+				B4F76D1D287AE5FB006BE55D /* Frameworks */,
+				B4F76D1E287AE5FB006BE55D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4F76D22287AE5FB006BE55D /* PBXTargetDependency */,
+			);
+			name = SitemateTests;
+			productName = SitemateTests;
+			productReference = B4F76D20287AE5FB006BE55D /* SitemateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B4F76D2A287AE5FB006BE55D /* SitemateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4F76D3A287AE5FB006BE55D /* Build configuration list for PBXNativeTarget "SitemateUITests" */;
+			buildPhases = (
+				13EBCDAFF3CE0D4E55DBD211 /* [CP] Check Pods Manifest.lock */,
+				B4F76D27287AE5FB006BE55D /* Sources */,
+				B4F76D28287AE5FB006BE55D /* Frameworks */,
+				B4F76D29287AE5FB006BE55D /* Resources */,
+				8A3BF53506BA30BD45D682E1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4F76D2D287AE5FB006BE55D /* PBXTargetDependency */,
+			);
+			name = SitemateUITests;
+			productName = SitemateUITests;
+			productReference = B4F76D2B287AE5FB006BE55D /* SitemateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4F76D02287AE5FA006BE55D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B4F76D09287AE5FA006BE55D = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					B4F76D1F287AE5FB006BE55D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = B4F76D09287AE5FA006BE55D;
+					};
+					B4F76D2A287AE5FB006BE55D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = B4F76D09287AE5FA006BE55D;
+					};
+				};
+			};
+			buildConfigurationList = B4F76D05287AE5FA006BE55D /* Build configuration list for PBXProject "Sitemate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4F76D01287AE5FA006BE55D;
+			productRefGroup = B4F76D0B287AE5FA006BE55D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4F76D09287AE5FA006BE55D /* Sitemate */,
+				B4F76D1F287AE5FB006BE55D /* SitemateTests */,
+				B4F76D2A287AE5FB006BE55D /* SitemateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4F76D08287AE5FA006BE55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F76D1A287AE5FB006BE55D /* LaunchScreen.storyboard in Resources */,
+				B49E6EC9287AE7B4003E45BA /* En.strings in Resources */,
+				B4F76D17287AE5FB006BE55D /* Assets.xcassets in Resources */,
+				B4F76D15287AE5FA006BE55D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F76D1E287AE5FB006BE55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F76D29287AE5FB006BE55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		025DC52FD1E1FD99549B9268 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SitemateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13EBCDAFF3CE0D4E55DBD211 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sitemate-SitemateUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1971906018BBFFE1A6231815 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sitemate/Pods-Sitemate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sitemate/Pods-Sitemate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sitemate/Pods-Sitemate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A3BF53506BA30BD45D682E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sitemate-SitemateUITests/Pods-Sitemate-SitemateUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sitemate-SitemateUITests/Pods-Sitemate-SitemateUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sitemate-SitemateUITests/Pods-Sitemate-SitemateUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9E06E4010A25EE5FCCEE95A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sitemate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4F76D06287AE5FA006BE55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F76D12287AE5FA006BE55D /* MainController.swift in Sources */,
+				B4F76D0E287AE5FA006BE55D /* AppDelegate.swift in Sources */,
+				B4F76D3F287AE62E006BE55D /* SitemateRouter.swift in Sources */,
+				B49E6ECF287AE826003E45BA /* Common.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F76D1C287AE5FB006BE55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F76D25287AE5FB006BE55D /* SitemateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F76D27287AE5FB006BE55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F76D30287AE5FB006BE55D /* SitemateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4F76D22287AE5FB006BE55D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4F76D09287AE5FA006BE55D /* Sitemate */;
+			targetProxy = B4F76D21287AE5FB006BE55D /* PBXContainerItemProxy */;
+		};
+		B4F76D2D287AE5FB006BE55D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4F76D09287AE5FA006BE55D /* Sitemate */;
+			targetProxy = B4F76D2C287AE5FB006BE55D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4F76D13287AE5FA006BE55D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4F76D14287AE5FA006BE55D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4F76D18287AE5FB006BE55D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4F76D19287AE5FB006BE55D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4F76D32287AE5FB006BE55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4F76D33287AE5FB006BE55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4F76D35287AE5FB006BE55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E407C2985A72BDFA3A4414C2 /* Pods-Sitemate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ4W269BZ7;
+				INFOPLIST_FILE = Sitemate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitemate.Sitemate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4F76D36287AE5FB006BE55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21163459D62BE46EBD86E99 /* Pods-Sitemate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ4W269BZ7;
+				INFOPLIST_FILE = Sitemate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitemate.Sitemate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B4F76D38287AE5FB006BE55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32BFE428D08F3C7517C86544 /* Pods-SitemateTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ4W269BZ7;
+				INFOPLIST_FILE = SitemateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitemate.SitemateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sitemate.app/Sitemate";
+			};
+			name = Debug;
+		};
+		B4F76D39287AE5FB006BE55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CDAA0BA6FF8A90C09E6F8EA /* Pods-SitemateTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ4W269BZ7;
+				INFOPLIST_FILE = SitemateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitemate.SitemateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sitemate.app/Sitemate";
+			};
+			name = Release;
+		};
+		B4F76D3B287AE5FB006BE55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12EC7FF0AED884B30C58972B /* Pods-Sitemate-SitemateUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ4W269BZ7;
+				INFOPLIST_FILE = SitemateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitemate.SitemateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sitemate;
+			};
+			name = Debug;
+		};
+		B4F76D3C287AE5FB006BE55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8884061060E30D59BD5B971 /* Pods-Sitemate-SitemateUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ4W269BZ7;
+				INFOPLIST_FILE = SitemateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sitemate.SitemateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sitemate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4F76D05287AE5FA006BE55D /* Build configuration list for PBXProject "Sitemate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F76D32287AE5FB006BE55D /* Debug */,
+				B4F76D33287AE5FB006BE55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4F76D34287AE5FB006BE55D /* Build configuration list for PBXNativeTarget "Sitemate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F76D35287AE5FB006BE55D /* Debug */,
+				B4F76D36287AE5FB006BE55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4F76D37287AE5FB006BE55D /* Build configuration list for PBXNativeTarget "SitemateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F76D38287AE5FB006BE55D /* Debug */,
+				B4F76D39287AE5FB006BE55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4F76D3A287AE5FB006BE55D /* Build configuration list for PBXNativeTarget "SitemateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F76D3B287AE5FB006BE55D /* Debug */,
+				B4F76D3C287AE5FB006BE55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4F76D02287AE5FA006BE55D /* Project object */;
+}
