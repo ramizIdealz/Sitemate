@@ -23,9 +23,15 @@ class DataStorage: NSObject {
                     realmObj.add(userMapped)
                 }
             }
+            
+            delegate?.dataProcessedSuccesfully()
+        }
+        else
+        {
+            let errorStrings = response["error"] as! String
+            delegate?.dataStorageError(error: errorStrings)
         }
         
-        delegate?.dataProcessedSuccesfully()
     }
     
     // Normally we don't use this, we update the saved data with their id, but this is a show and kill feature
